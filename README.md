@@ -11,9 +11,9 @@ Please follow the instructions below and fill in the information requested when 
 
 |               | Information   |
 |:-------------:|:-------------:|
-| Student Name  | name-here     |
-| Student ID    | id-here       |
-| Student Email | email-here    |
+| Student Name  | Gabriel Gonzalez     |
+| Student ID    | 918599323       |
+| Student Email | ggonzalez2@mail.sfsu.edu    |
 
 
 
