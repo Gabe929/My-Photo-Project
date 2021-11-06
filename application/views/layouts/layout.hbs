@@ -3,9 +3,14 @@
   <head>
     <title>{{title}}</title>
     <link rel="icon" href="/public/favicon.ico" sizes="70x70" type="image/ico">
-    <link rel='stylesheet' href='/public/stylesheets/style.css' />
+    <link rel='stylesheet' type="text/css" href='/public/css/style.css' />
   </head>
-  <body>
-    {{{body}}}
+  <body> 
+    <div id ="container">
+      {{> banner}}
+      {{> nav-bar}}
+      {{{body}}}
+      {{>footer}}
+    </div>
   </body>
 </html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/public/css/registration.css">
+    <script defer src ="/public/js/registration.js"></script>
+    <title>Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+    <form id = registration>
+        <div id ="error" class = 'error'></div>
+        <div class = "grid">
+            
+            <label> UserName:</label>
+            <input type="text" id = "uname" placeholder="Username"> 
+        
+
+            <label>Email:</label>
+            <input type="email" id = "email" placeholder="Email" required>
+        
+
+            <label>Password:</label>
+            <input type="password" id = "password" placeholder="Password">
+        
+            <label>Comfirm Password:</label>
+            <input type="password" id = "cPassword"  placeholder="Comfirm Password">
+        
+
+            <label>Are you 13+ years of age:</label>
+            <input type="checkbox" required/>
+        
+
+            <label>Accept <a href="#">TOS</a> and <a href="#">Privacy Rules</a>:</label>
+            <input type="checkbox" required/>
+        
+        
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

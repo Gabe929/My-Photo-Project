@@ -1,0 +1,58 @@
+body {
+    background-image: url("forest.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:black;
+   
+  }
+  
+h1 {
+    color:whitesmoke;
+    text-align: center; 
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+form{
+    border: 5px dashed black;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+.grid > label{
+    justify-self: center;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: rgb(231, 224, 224);
+    
+}
+.grid > button{
+    background-color: rgb(224, 63, 63);
+    justify-self: right;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+}
+
+.error {
+    /* justify-self: center; */
+    font-family: 'Franklin Gothic Medium';
+    font-size: 20px;
+    /* border: 1px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: rgb(231, 224, 224); */
+    color:rgb(224, 63, 63)
+}
+
+
+  
