@@ -1,17 +1,12 @@
-body {
-    background-color:mediumseagreen;
-  }
-  
-  h1 {
-    color: white;
-    text-align: center;
+h1 {
+  text-align: center;
     
-  }
+}
   
-  form {
-    font-family: 'Franklin Gothic Medium';
-    font-size: 20px;
-    background-color: whitesmoke;
-    border: 5px dashed black;
-    border-radius: 25px;
-  }
+form {
+  font-family: 'Franklin Gothic Medium';
+  font-size: 20px;
+  background-color: whitesmoke;
+  border: 5px dashed black;
+  border-radius: 25px;
+}

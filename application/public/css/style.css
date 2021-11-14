@@ -1,3 +1,8 @@
+body{
+  background-image: url("blue.webp");
+  background-size: cover;
+  
+}
 #banner{
     display: flex;
     height: 100px;
