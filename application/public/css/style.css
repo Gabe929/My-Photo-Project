@@ -3,6 +3,26 @@ body{
   background-size: cover;
   
 }
+
+#flash-message{
+  position: fixed;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%,0);
+  margin: auto;
+  margin-top: 3%;
+  text-align: center;
+  background: rgba(0, 0, 0, .4);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#flash-message div{
+  text-align: center;
+  border: 10px solid rgba(0,0,0,.4);
+  border-radius: 5px;
+}
+
 #banner{
     display: flex;
     height: 100px;

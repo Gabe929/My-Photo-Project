@@ -10,15 +10,16 @@
     <header>
         <h1>Login Form</h1>
     </header>
-    <form>
+    <form method="POST" action="/users/login"
+    enctype="application/x-www-form-urlencoded">
         <fieldset>
             <legend>Account Info</legend>
             <label>UserName:</label>
-            <input type="text" required/>
+            <input type="text" placeholder = "Username" name = "username"required/>
             <br />
 
             <label>Password:</label>
-            <input type="password" required/>
+            <input type="password" placeholder = "Password" name = "password" required/>
         </fieldset>
         <fieldset>
             <button type="submit">Submit</button>
