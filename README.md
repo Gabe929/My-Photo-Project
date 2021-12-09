@@ -21,7 +21,10 @@ Please follow the instructions below and fill in the information requested when 
 
 ## Build Instructions
 1. npm install
-2. under /config/csc317db are my sql servers for user, post, and comments (insert them into sql workshop to initialize)
+2. npm i express
+3. npm i bcyrpt
+4. npm i multer sharp
+5. under /config/csc317db are my sql servers for user, post, and comments (insert them into sql workshop to initialize)
 
 ## Run Instructions
 1. npm start
