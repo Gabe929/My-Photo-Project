@@ -1,3 +1,4 @@
+const { body, validationResult} = require('express-validator')
 const checkUsername = (username) =>{
     /**
      * Regex Explanation
@@ -89,4 +90,34 @@ const loginValidator = (req, res, next) => {
     }
 }
 
-module.exports = {registerValidator, loginValidator}
+
+const postValidator = (req, res, next) => {
+    let title = req.body.title;
+    let description = req.body.description;
+    let fileUploaded = req.file.path;
+
+    if(title = ""){
+        req.flash('error', "There is no title!!");
+        req.session.save(err =>{
+            res.redirect('/postImage');
+        })
+    } else{
+        if(description = ""){
+            req.flash('error', "There is no description!!");
+            req.session.save(err =>{
+                res.redirect('/postImage');
+            })
+        } else{    
+            if(fileUploaded = ""){
+                req.flash('error', "There is no image!!");
+                req.session.save(err =>{
+                    res.redirect('/postImage');
+                })
+            } else{    
+                next();
+            }
+        }
+    }
+}
+
+module.exports = {registerValidator, loginValidator, postValidator}

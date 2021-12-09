@@ -1,14 +1,16 @@
-<div class="nav-bar">
+<nav class="nav-bar">
     <a href = "/" id = "brand-anchor"
     class = "nav-items anchor-buttons">Index</a>
+    <input id ="search-text" name ="search-text" type="text">
+    {{!-- <div id="text-bar-icon">
+        <i id='sicon' class ="fas fa-search nav-items"></i>
+    </div> --}}
+    <button type= "button" id = "search-button" >Search</button>
     <a href = "/registration" id = "registration-button"
     class = "nav-items anchor-buttons">Registration</a>
-    <a href = "/postimage" id = "post-button"
+    <a href = "/postImage" id = "post-button"
     class = "nav-items anchor-buttons">Post</a>
-    <a href = "/viewpost" id = "view-button"
-    class = "nav-items anchor-buttons">ViewPost</a>
-    <a href = "/home" id = "home-button"
-    class = "nav-items anchor-buttons">Home</a>
+   
     
     {{#if logged}}
     <a id = "logout-button"
@@ -17,4 +19,4 @@
     <a href = "/login" id = "login-button"
     class = "nav-items anchor-buttons">Log In</a>
     {{/if}}
-</div>
+</nav>

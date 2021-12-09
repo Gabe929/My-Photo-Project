@@ -7,6 +7,8 @@ const logger = require("morgan");
 const handlebars = require("express-handlebars");
 const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
+const postsRouter = require("./routes/posts");
+const commentRouter = require("./routes/comments");
 var sessions = require('express-session');
 const { requestPrint } = require("./helpers/debug/debugprinters");
 var mysqlSession = require('express-mysql-session')(sessions);
@@ -62,6 +64,8 @@ app.use((req, res, next)=>{
 
 app.use("/", indexRouter); // route middleware from ./routes/index.js
 app.use("/users", usersRouter); // route middleware from ./routes/users.js
+app.use("/posts", postsRouter);
+app.use("/comments", commentRouter);
 
 
 /**

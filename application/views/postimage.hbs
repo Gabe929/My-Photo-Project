@@ -10,18 +10,18 @@
     <header>
         <h1>Post Image Form</h1>
     </header>
-    <form>
+    <form method ="POST" enctype="multipart/form-data" action = '/posts/createPost'>
         <legend>Image Details</legend>
         <label>Title:</label>
-        <input type="text" required/>
+        <input type="text" placeholder = "Post Title" name= "title"required/>
         <br />
 
         <label>Description:</label>
-        <input type="text" required/>
+        <input type="text" placeholder = "Post Description" name = "description" required/>
         <br />
 
         <label>Enter Image:</label>
-        <input type="file" required/>
+        <input type="file" name = "uploadImage" required/>
         <br />
             
         <label>Accept TOS and Privacy Rules:</label>

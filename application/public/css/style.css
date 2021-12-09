@@ -15,6 +15,7 @@ body{
   background: rgba(0, 0, 0, .4);
   border-radius: 5px;
   padding: 5px;
+  z-index: 9999;
 }
 
 #flash-message div{
@@ -30,7 +31,12 @@ body{
     background-image: url("bricks.jpg");
     align-items: center;
     justify-content:center ;
-  }
+    box-shadow: black;
+}
+
+#banner-text {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 .nav-bar{
   display: flex;
@@ -48,10 +54,140 @@ body{
   margin-left: 25px;
   margin-right: 25px;
 }
+
+#search-button{
+  background-color: dodgerblue;
+  padding: 10px;
+  border: solid dodgerblue;
+}
+
+#main-content{
+  grid-area: content;
+  padding-top: .35em;
+  padding-bottom: .35em;
+  display: grid;
+  gap: .2rem .2rem;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+}
+
+#card{
+  display: grid;
+  grid-template-rows: 186px 150px;
+  grid-template-columns: auto;
+  border: .0625rem solid white;
+  border-radius: .25rem;
+}
+.card-image {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+div[class=card] > img {
+  height: 75%;
+  width: 100%;
+}
+
+.card-title {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: .1rem;
+  margin-top: 0;
+  padding-top: .1rem;
+}
+
+.card-body {
+  grid-area: 2 / 1 / 3 / 2;
+  padding: .75rem;
+  background-color: #232f23;
+  border-radius: 0 0 .2rem .2rem;
+}
+
+div[class=card-body] > a[class=card-button] {
+  text-decoration: none;
+}
+
+.card-text {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#post-container {
+  grid-area: content;
+  padding-top: .35em;
+  padding-bottom: .35em;
+  display: grid;
+  grid-gap: .2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+#image-post-image {
+  max-height: 750px;
+  max-width: 750px;
+}
+
+#comment-container {
+  display: grid;
+  grid-area: comments;
+  grid-template-rows: auto 75px;
+  grid-template-columns: 1fr;
+  gap: .2rem;
+  grid-template-areas:
+  "messages"
+  "comment-box";
+  max-height: 80vh;
+}
+
+#messages {
+  grid-area: messages;
+  overflow-y: auto;
+  display:flex;
+  flex-flow: column-reverse nowrap;
+  scroll-behavior: smooth;
+  border: 1px solid #cccccc;
+  box-shadow: -2px 2px 4px 4px #e0e0e0;
+  border-radius: .35rem;
+}
+
+div[id^=message-]{
+  display: grid;
+  grid-template-rows: .3fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: .2em;
+  padding: .25rem;
+  margin: .2rem;
+  font-size: 1rem;
+  border: 0.625rem solid #ced4da;
+  border-radius: .25rem;
+  grid-template-areas: 
+  "author created"
+  "comment comment";
+}
+
+.author-text {
+  grid-area: author;
+  justify-self: start;
+}
+
+.comment-text {
+  grid-area: comment;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 75px;
+  min-height: 75px;
+}
+
+.date-posted{
+  grid-area: created;
+  justify-self: end;
+}
+
 #footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  border: 1px solid white;
-  background-color: white;
+  color: white;
+  background-color: #232f23;
 }

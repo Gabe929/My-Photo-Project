@@ -1,5 +1,7 @@
+var express = require('express');
 const { errorPrint, successPrint } = require ('../helpers/debug/debugprinters');
 const routeProtectors = {};
+
 
 
 routeProtectors.userIsLoggedIn = function(req, res, next){

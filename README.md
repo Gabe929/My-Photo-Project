@@ -20,9 +20,9 @@ Please follow the instructions below and fill in the information requested when 
 # Build/Run Instructions
 
 ## Build Instructions
-1. steps here
-2. steps here
+1. npm install
+2. under /config/csc317db are my sql servers for user, post, and comments (insert them into sql workshop to initialize)
 
 ## Run Instructions
-1. steps here
-2. steps here 
+1. npm start
+
